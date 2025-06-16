@@ -8,7 +8,7 @@ if (php_sapi_name() !='cli') exit;
 
 
 /* File: posts_data.txt */
-$sql = mysqli_connect('localhost', 'uv6qlo93btxeh', 'swvaivkjeuu0', 'dbjpqd1dwdpxms');
+$sql = mysqli_connect('localhost', 'username', 'password', 'databasename');
 
 if( mysqli_connect_errno() ) {
     file_put_contents('errors.log', date("d-m-Y H:i:s") . ':: Failed to connect(1) to MySQL: '.mysqli_connect_error().PHP_EOL, FILE_APPEND);
